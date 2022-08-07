@@ -21,6 +21,8 @@ function addToList() {
     // read task from seach bar
     let newTask = document.getElementById('textBar').value
 
+    const blankValue = ''
+
     // create new task with id
     var task = {
         id: makeid(),
@@ -32,11 +34,15 @@ function addToList() {
     let button = document.createElement('button')
     button.innerText = 'x'
     button.id = task['id']
+    button.addEventListener('click', function () {
+        li.remove()
+    })
 
     let li = document.createElement('li')
-    li.innerText = task['item']
+    li.innerText = task['item'] + '  '
     li.appendChild(button)
 
     list.appendChild(li)
 
 };
+

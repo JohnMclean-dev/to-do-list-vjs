@@ -3,3 +3,11 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.tasks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 2;
+}

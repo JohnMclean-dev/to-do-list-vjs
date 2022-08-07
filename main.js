@@ -29,8 +29,14 @@ function addToList() {
 
     let list = document.getElementById('taskList');
 
+    let button = document.createElement('button')
+    button.innerText = 'x'
+    button.id = task['id']
+
     let li = document.createElement('li')
     li.innerText = task['item']
+    li.appendChild(button)
+
     list.appendChild(li)
 
 };
